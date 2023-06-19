@@ -1,7 +1,7 @@
 import React from 'react';
 import BookItem from './BookItem';
 
-const BookList = ( {listData, onDel} ) => {
+const BookList = ( {listData, onDel, onEdit} ) => {
     return (
         <div className="book-list">
             <table className="book-table">
@@ -24,7 +24,7 @@ const BookList = ( {listData, onDel} ) => {
                 </thead>
                 <tbody className="book-tbody">
                         {
-                            listData.map(item => <BookItem item={item} onDel={onDel} />)
+                            listData.map(item => <BookItem item={item} onDel={onDel} onEdit={onEdit} />)
                         }
 
                 </tbody>

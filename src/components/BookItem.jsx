@@ -1,6 +1,6 @@
 import React from 'react';
 
-const BookItem = ( {item, onDel} ) => {
+const BookItem = ( {item, onDel, onEdit} ) => {
     const {id, title, author, bookcode} = item;
 
     return (
@@ -8,7 +8,10 @@ const BookItem = ( {item, onDel} ) => {
             <td>{title}</td>
             <td>{author}</td>
             <td>{bookcode}</td>
-            <td><button className='delete' onClick={() => onDel(id)}>X</button></td>
+            <td>
+                <button onClick={() => onEdit(item)}>✎</button>
+                <button onClick={() => onDel(id)}>X</button>
+            </td>
         </tr>
     );
 };

@@ -84,6 +84,7 @@ body{-ms-overflow-style: none;}
                 }
             }
             .book-list {
+                max-width: 600px;
                 .book-table {
                     border: 5px solid #1b4332;
                     width: 600px;
@@ -125,6 +126,7 @@ body{-ms-overflow-style: none;}
                         border: none;
                         background: #081c15;
                         color: #FFF;
+                        vertical-align: middle;
                     }
                 }
 
